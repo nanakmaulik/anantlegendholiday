@@ -1,0 +1,90 @@
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Subscribe to our Newsletter</h2>
+      <div class="card-header bg-primary text-center p-4">
+        <h1 class="text-white m-0">Sign Up Now</h1>
+    </div>
+    <div class="card-body rounded-bottom bg-white p-5">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
+            </div>
+            <div class="form-group">
+                <select class="custom-select px-4" style="height: 47px;">
+                    <option selected>Destination</option>
+                    <option value="1">AMRITSAR</option>
+                    <option value="2">MANALI</option>
+                    <option value="3">DHARAMSHALA</option>
+                    <option value="4">DALHOUSIE</option>
+                    <option value="5">GOA</option>
+                    <option value="6">ROHTANG </option>
+                </select>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-block py-3" type="submit">Sign Up Now</button>
+            </div>
+        </form>
+    </div>
+    </div>
+  </div>
+  <style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Add any additional styling as needed */
+</style>
+<script>
+    // Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the close button element
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Open the modal when the page loads
+window.onload = function() {
+  modal.style.display = "block";
+};
+
+// Close the modal when the close button is clicked
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+};
+
+</script>
